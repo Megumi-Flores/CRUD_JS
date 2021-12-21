@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!--Metas-->
     <meta charset="UTF-8">
@@ -7,11 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Titulo de la pagina-->
     <title>CRUD</title>
+    <!--Estilo básico para la tabla-->
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
+
 <body>
     <!--Titulo-->
     <h1>CRUD</h1>
-
     <!--Formulario-->
     <form>
         <input type="text" id="nombre" autocomplete="off" placeholder="Nombre" />
@@ -21,6 +30,7 @@
     <!--Botones-->
     <button id="crear">Crear</button>
     <button id="borrar_todo">Borrar Todo</button>
+    <button id="actualizar" style="display: none">Actualizar</button>
     <!--Tabla-->
     <table>
         <thead>
@@ -33,14 +43,12 @@
                 <th scope="col">Borrar</th>
             </tr>
         </thead>
-        <!--Cuerpo de la Tabla-->
+        <!--Table body-->
         <tbody id="tbody">
         </tbody>
     </table>
     <!--Javascript-->
     <script src="js/script.js"></script>
 </body>
+
 </html>
-
-
-
